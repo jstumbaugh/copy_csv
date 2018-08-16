@@ -24,6 +24,9 @@ But someone else also wants to see the list, but in Excel. This is where
 File.open("unsubscribed_users.csv", "w") do |file|
   User.where(unsubscribed: true).copy_csv(file)
 end
+
+# Alternatively, you can use `write_to_csv` to not have to deal with opening a file
+User.where(unsubscribed: true).write_to_csv("unsubscribed_users.csv")
 ```
 
 `unsubscribed_users.csv` will now contain all of the Users that have

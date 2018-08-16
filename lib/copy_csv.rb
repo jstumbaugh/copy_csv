@@ -30,5 +30,18 @@ module CopyCsv
 
       nil
     end
+
+    # Opens the file provided and writes the relation to it as a CSV.
+    #
+    # Example
+    #
+    #     User.where(unsubscribed: false).write_to_csv("unsubscribed_users.csv")
+    #
+    # Returns nil
+    def write_to_csv(file_name, mode = "w")
+      File.open(file_name, mode) do |file|
+        all.copy_csv(file)
+      end
+    end
   end
 end
