@@ -11,8 +11,8 @@ module CopyCsv
     #
     # Example
     #
-    #     File.open("users.csv", "wb") do |file|
-    #       User.where(unsubscribed: false).copy_csv(io: file)
+    #     File.open("unsubscribed_users.csv", "w") do |file|
+    #       User.where(unsubscribed: false).copy_csv(file)
     #     end
     #
     # Returns nil

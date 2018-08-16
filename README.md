@@ -1,4 +1,4 @@
-# CopyCsv
+# copy_csv
 
 A useful gem for converting an `ActiveRecord` Relation into a CSV formatted
 string.
