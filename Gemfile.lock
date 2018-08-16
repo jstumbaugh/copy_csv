@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    copy_csv (0.1.0)
+    copy_csv (1.0.0)
       activesupport (>= 5.0)
 
 GEM
@@ -45,4 +45,4 @@ DEPENDENCIES
   rspec (~> 3.0)
 
 BUNDLED WITH
-   1.16.2
+   1.16.3
