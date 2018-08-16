@@ -3,6 +3,8 @@
 A useful gem for converting an `ActiveRecord` Relation into a CSV formatted
 string.
 
+[![Gem Version](https://badge.fury.io/rb/copy_csv.svg)](https://badge.fury.io/rb/copy_csv)
+
 ## Basic Example
 
 There are a few users that have unsubscribed from your mailing list. You want
@@ -80,6 +82,10 @@ to use it in the rails console, your can just include it at will:
 ```
 
 And it can be used in that console session.
+
+## Documentation
+
+View the [docs](https://www.rubydoc.info/gems/copy_csv/0.1.0).
 
 ## Development
 
