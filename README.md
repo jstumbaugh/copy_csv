@@ -5,6 +5,8 @@ string.
 
 [![Gem Version](https://badge.fury.io/rb/copy_csv.svg)](https://badge.fury.io/rb/copy_csv)
 
+View it on [RubyGems](https://rubygems.org/gems/copy_csv)
+
 ## Basic Example
 
 There are a few users that have unsubscribed from your mailing list. You want
