@@ -90,7 +90,7 @@ And it can be used in that console session.
 
 ## Documentation
 
-View the [docs](https://www.rubydoc.info/gems/copy_csv/0.1.0).
+View the [docs](https://www.rubydoc.info/gems/copy_csv/).
 
 ## Development
 
