@@ -24,7 +24,7 @@ module CopyCsv
       raw = connection.raw_connection
       raw.copy_data(query) do
         while (row = raw.get_copy_data)
-          io.puts row
+          io.puts(ensure_utf8(row))
         end
       end
 
@@ -43,5 +43,11 @@ module CopyCsv
         all.copy_csv(file)
       end
     end
+
+    private
+
+      def ensure_utf8(str)
+        str.to_s.encode("UTF-8", invalid: :replace, undef: :replace, replace: "?")
+      end
   end
 end
