@@ -9,14 +9,14 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jason Stumbaugh"]
   spec.email         = ["stumbaughjason@gmail.com"]
 
-  spec.summary       = %q{Copy an ActiveRecord relation to a CSV formatted string}
-  spec.description   = %q{Copy an ActiveRecord relation to a CSV formatted string}
+  spec.summary       = "Copy an ActiveRecord relation to a CSV formatted string"
+  spec.description   = "Copy an ActiveRecord relation from a Postgres database to a CSV formatted string"
   spec.homepage      = "https://github.com/jstumbaugh/copy_csv"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
+  spec.files = Dir.chdir(File.expand_path("..", __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
   spec.bindir        = "exe"
